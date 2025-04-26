@@ -2,6 +2,7 @@
 
 import { useState} from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+// import MapComponent from "../Map/Map";
 
 const ContactPage: React.FC = () => {
   
@@ -139,7 +140,7 @@ const ContactPage: React.FC = () => {
 
         {/* Google Map Embed */}
         <div className="mt-12">
-          <MapComponent />
+          {/* <MapComponent /> */}
         </div>
       </div>
     </section>
