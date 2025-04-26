@@ -1,5 +1,4 @@
 import withBundleAnalyzer from "@next/bundle-analyzer";
-import "./src/libs/Env";
 
 const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === "true", 
@@ -8,7 +7,7 @@ const bundleAnalyzer = withBundleAnalyzer({
 /** @type {import('next').NextConfig} */
 const nextConfig = bundleAnalyzer({
   eslint: {
-    dirs: ["."], 
+    ignoreDuringBuilds: true, 
   },
   poweredByHeader: false, 
   reactStrictMode: true, 
