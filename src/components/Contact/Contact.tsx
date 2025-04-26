@@ -2,7 +2,6 @@
 
 import { useState} from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import MapComponent from "../Map/Map";
 
 const ContactPage: React.FC = () => {
   
